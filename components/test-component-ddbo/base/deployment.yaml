@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-ddbo
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:db40ac189fe8487bbcc86d9055d644c1
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e5b2e5a4ede27c7f389a458aca6ccade3b24af5db3a2e8c68d54d8d566163781
         name: my-python
         ports:
         - containerPort: 8081
