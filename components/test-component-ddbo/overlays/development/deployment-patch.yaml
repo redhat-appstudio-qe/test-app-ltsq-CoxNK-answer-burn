@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-ddbo
+  namespace: build-e2e-zqbn-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e5b2e5a4ede27c7f389a458aca6ccade3b24af5db3a2e8c68d54d8d566163781
+        name: my-python
+        resources: {}
+status: {}
